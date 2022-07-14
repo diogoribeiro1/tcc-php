@@ -1,0 +1,89 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #26335D;
+}
+
+a {
+	text-decoration: none;
+	color: #694ED6;
+	font-size: 12px;
+	width: 119px;
+	height: 18px;
+	top: 500px;
+	margin-right: 85px;
+	margin-left: 80px;
+}
+
+#container {
+	width: 650px;
+	height: 500px;
+	background-color: #F5F4F8;
+	-webkit-border-radius:  10px;
+	-moz-border-radius:  10px;
+	border-radius: 10px;
+	margin:  0 auto;
+	margin-top: 60px;
+	text-align: center;
+}
+
+#container img {
+	margin-left: 10px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	height:100px;
+	width: 100px;
+}
+
+input {
+	height: 50px;
+	width: 60%;
+	font-size: 15px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+	border-bottom: 1px solid #694ED6;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+input.email {
+	background-image: url(imagens/imagens/icone-usuario.png);
+}
+
+input.senha {
+	background-image: url(imagens/imagens/icone-cadeado.png);
+}
+
+button.submit {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #694ED6;
+	border: none;
+	border-radius: 8px;
+	padding: 5px 20px;
+	height: 50px;
+	width: 60%;
+	margin-top: 30px;
+}
+
+.div_nome .icon {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 10px;
+  top: 234px;
+  opacity: 0.5;
+}
+
+.div_senha .icon {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 10px;
+  top:305px;
+  opacity: 0.5;
+}

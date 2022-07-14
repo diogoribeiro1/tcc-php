@@ -1,0 +1,98 @@
+/*Início-cabeçalho */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #26335d;
+}
+
+/*Fim-cabeçalho */
+
+/*Início Tipografia*/
+
+.fluxogramaTitle {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+/*Fim Tipografia*/
+
+/*Início botões*/
+.btnDisciplina {
+  background-color: #694ed6;
+  font-weight: bold;
+  color: white;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.btnDisciplina:hover {
+  color: #26335d;
+  background-color: #694ed6c5;
+}
+
+/* Fim botões */
+
+/*Início container */
+.modal-header {
+  border-bottom: 0px;
+}
+#containerModal {
+  background-color: #f5f4f8;
+  height: auto;
+  width: auto;
+  margin-bottom: 10%;
+  padding-bottom: 20px;
+}
+.btnAvaliacao {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #694ed6;
+}
+.imgBreve {
+  height: 100px;
+  width: 100px;
+}
+.breve {
+  color: #474545;
+}
+.nav-tabs .nav-link.active {
+  background-color: #26325c;
+  font-size: 25px;
+  line-height: 38px;
+
+  color: #ffffff;
+}
+.form-check-label, .pergunta{
+	color: #404040;
+}
+.form-check-input{
+	background: #EFEDF7;
+border: 1px solid rgba(105, 78, 214, 0.5);
+border-radius: 2px;
+}
+.btnConcluir {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #694ed6;
+  border: none;
+	padding: 8px 16px;
+	width: 15%;
+  border-radius: 5px;
+  letter-spacing: 1.25px;
+}
+/* Fim container*/

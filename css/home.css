@@ -1,0 +1,53 @@
+.home_body{
+  background-color: rgba(115, 99, 138);
+}
+.contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  width: 50%;
+  padding: 4px 15px;
+  border: none;
+  border-radius: 8px;
+}
+/* Icon when the collapsible content is shown */
+.btnContador:after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  font-size: 2em;
+  content: "\f107";
+}
+/* Icon when the collapsible content is hidden */
+.btnContador.collapsed:after {
+  content: "\f106";
+}
+.btnContador{
+  width: 40px;
+}
+.btnContador:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%);
+}
+.collapseContador{
+  font-size: 36px;
+  position: center;
+  align-items: center;
+}
+#contador{
+  background: rgb(225 225 225 / 27%);
+  border-radius: 100px;
+  padding-left: 122px;
+  padding-right: 122px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: rgb(225 225 225 / 100%);
+}
+.subtituloContador{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}

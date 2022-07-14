@@ -1,0 +1,27 @@
+* {
+  font-family: Poppins, Questrial, sans-serif;
+}
+.navbar{
+  background-color: white;
+}
+.navbar-brand{
+  margin-left: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem;
+}
+.nav-link{
+  margin-right: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(71,69,69,100)
+}
+.nav-link:focus, .nav-link:hover, .navbar-brand:hover{
+  color: #694ED6;
+}
+.active{
+  color: #694ED6;
+}

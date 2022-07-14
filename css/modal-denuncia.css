@@ -1,0 +1,46 @@
+
+
+.textoDenuncia {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #694ed6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #694ed606;
+  border-radius: 4px 4px 0px 0px;
+}
+.form-check {
+  padding-bottom: 2%;
+}
+.form-check-input {
+  background: #efedf7;
+  border: 1px solid rgba(105, 78, 214, 0.5);
+  border-radius: 2px;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+.btn-concluir {
+  background-color: #694ed6;
+  color: white;
+	width: 160px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 10px;
+}

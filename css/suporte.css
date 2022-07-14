@@ -1,0 +1,33 @@
+.suporte_body{
+  background-color: rgb(38, 51, 93);
+}
+.container{
+  margin-top: 12%;
+}
+.faqtitle, .contatotitle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: white;
+  padding-left: 8%;
+}
+.faqrow{
+  background-color: rgb(245, 244, 248);
+}
+.card{
+  background-color: rgb(245, 244, 248);
+  border-radius: 0%;
+}
+.contato{
+  background-color: white;
+  margin-left: 8%;
+  margin-bottom: 10%;
+  border-radius: 4px;
+}
+.email{
+  margin-top: 12%;
+  margin-bottom: 12%;
+  padding-left: 8%;
+}

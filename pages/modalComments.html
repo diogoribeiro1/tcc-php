@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACAU - Fórum</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/c38b27744a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="../css/forum.css" />
+    <link rel="stylesheet" type="text/css" href="../css/modalComments.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#modalComentarios"
+    >
+      Comentários (0)
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalComentarios"
+      tabindex="-1"
+      aria-labelledby="Comentarios"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title postTitle title" id="modalComentarios"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row content py-2 my-3">
+              <div class="col-2 me-3">
+                <p class="author"></p>
+              </div>
+              <div class="col position-relative">
+                <p class="postContent"></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 form-floating">
+                <textarea
+                  class="form-control"
+                  id="floatingTextarea"
+                  id="message-text"
+                  rows="3"
+                ></textarea>
+                <label for="floatingTextarea">Comentário</label>
+              </div>
+              <div class="col align-self-end w-100 mx-0 px-2">
+                <div class="form-check">
+                  <input
+                    class="form-check-input checkboxAnonimo"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label pb-3" for="flexCheckDefault"
+                    >Comentário Anônimo
+                  </label>
+                  <button type="button" class="btn btn-sm btn-enviar">
+                    Enviar comentário
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="comments">
+              <div class="container">
+                <div class="row authorComment"></div>
+                <div class="row contentComment"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

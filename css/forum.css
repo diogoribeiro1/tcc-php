@@ -1,0 +1,182 @@
+body {
+  background: #26335d;
+}
+.lateral {
+  background-color: white;
+}
+.nomeSocial,
+.cursoNome,
+.minhasPostagens {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #404040;
+}
+a {
+  text-decoration: none;
+}
+.regras {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: #404040;
+}
+/*Início barra de pesquisa */
+
+.barra_pesquisa {
+  border-radius: 30px;
+  width: 750px;
+  height: 60px;
+  top: 150px;
+  margin-left: 12%;
+  margin-right: 12%;
+  padding: 10px;
+}
+.btn-search {
+  border: 0px;
+  background-color: transparent;
+  height: 40px;
+  top: 50px;
+  position: relative;
+  margin-left: 78%;
+}
+/* Fim barra de pesquisa */
+
+/*Início Seção das tags */
+#TAGS {
+  margin-left: 15%;
+}
+
+#TAGS p {
+  color: white;
+  font-size: 15px;
+}
+
+/*Fim Seção das tags */
+.author {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #404040;
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+
+  color: #404040;
+}
+
+.postContent {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #404040;
+}
+.content {
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.dropdown-menu {
+  min-width: 65%;
+}
+.dropdown-item {
+  font-family: "Poppins";
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #404040;
+}
+.comentarios {
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.btnComments{
+  border: 0px;
+  background-color: white;
+}
+.createPostBtn {
+  background-color: #694ed6;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border-radius: 25px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.fa-plus {
+  color: white;
+}
+.modalCreatePost{
+  max-width: 70%;
+}
+.headerCreatePost{
+  border-bottom: 0px;
+}
+.postTitle, .createPostContent, .tags{
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+
+color: #404040;
+}
+.form-control {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #694ed6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #694ed606;
+  border-radius: 4px 4px 0px 0px;
+}
+.form-check {
+  padding-bottom: 2%;
+}
+.form-check-input {
+  background: #efedf7;
+  border: 1px solid rgba(105, 78, 214, 0.5);
+  border-radius: 2px;
+}
+.modal-footer {
+  justify-content: center;
+}
+.btn-concluir {
+  background-color: #694ed6;
+  color: white;
+  width: 160px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}

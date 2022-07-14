@@ -1,0 +1,28 @@
+.btn-enviar{
+  background-color: #694ed6;
+  color: white;
+}
+.form-check-label{
+  font-size: small;
+}
+#floatingTextarea{
+  height: 100px;
+}
+.form-control {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #694ed6;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #694ed606;
+  border-radius: 4px 4px 0px 0px;
+}
+.form-check {
+  padding-bottom: 2%;
+}
+.form-check-input {
+  background: #efedf7;
+  border: 1px solid rgba(105, 78, 214, 0.5);
+  border-radius: 2px;
+}
