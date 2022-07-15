@@ -73,9 +73,6 @@ if(isset($_POST['confirmar_senha']) && isset($_POST['senha_atual'])) {
             <li class="nav-item">
               <a class="nav-link" href="pages/index.html">Home</a>
             </li>
-              <li class="nav-item">
-                  <?php  echo "<a class='nav-link'>".$_SESSION['idUser']."</a>"; ?>
-              </li>
             <li class="nav-item">
               <a class="nav-link" href="pages/suporte.html">Suporte</a>
             </li>
@@ -115,14 +112,14 @@ if(isset($_POST['confirmar_senha']) && isset($_POST['senha_atual'])) {
         <div class="div_nova_senha">
           <label>Nova senha</label>
 
-          <input class= "nova_senha" type="password" name="nova_senha" id="nova_senha"
+          <input class= "nova_senha" type="password" name="nova_senha" id="psw"
           placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
         </div>
 
         <div class="div_confirmar_senha">
           <label>Confirmar nova senha</label>
 
-          <input class="confirmar_senha" type="password" name="confirmar_senha" id="confirmar_senha"
+          <input class="confirmar_senha" type="password" name="confirmar_senha" id="confirm_password"
           placeholder="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
             </div>
             </div>

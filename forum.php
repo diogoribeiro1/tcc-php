@@ -1,7 +1,26 @@
 <?php
-//include_once 'Models/AlunoModel.php';
+include_once 'Models/PostModel.php';
 session_start();
 
+
+        if(isset($_GET['titulo']) && isset($_GET['tags'])) {
+            $txtBox = $_GET['conteudo'];
+            $titulo = $_GET['titulo'];
+            $tags = $_GET['tags'];
+
+            $DataAtual = new DateTime();
+            $result = $DataAtual->format('d-m-Y H:i:s');
+
+            $model = new PostModel();
+            $model->data = $result;
+            $model->tforum = $titulo;
+            $model->post = $txtBox;
+            $model->idaluno = $_SESSION['idUser'];
+            $model->tag = $tags;
+
+            $model->save($model);
+
+        }
 
 ?>
 
@@ -74,7 +93,7 @@ session_start();
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="forum.html"
+                <a class="nav-link active" aria-current="page" href="forum.php"
                   >Fórum</a
                 >
               </li>
@@ -151,36 +170,39 @@ session_start();
                     aria-label="Fechar"
                   ></button>
                 </div>
+
                 <div class="modal-body">
                   <label class="postTitle"
                     >Insira o título da sua postagem:</label
                   >
+                    <form method="GET">
                   <input
                     class="form-control"
                     type="text"
                     placeholder="Título"
                     aria-label="título da postagem"
                     value=titulo
-                    
+                    name="titulo"
             
                   />
                   <label class="createPostContent mt-4"
                     >Insira o conteúdo da sua postagem:</label
                   >
-            
                   <textarea
                     class="form-control"
                     id="createPostContent"
                     rows="5"
+                    name="conteudo"
                   ></textarea>
                   <label class="tags mt-4">Tags:</label>
-                  <input class="form-control" type="text" placeholder="Tags" />
+                  <input class="form-control" type="text" placeholder="Tags" name="tags" />
                   <div class="form-check">
                     <input
                       class="form-check-input"
                       type="checkbox"
                       value=""
                       id="flexCheckDefault"
+                      name="postAnonimo"
                     />
                     <label class="form-check-label" for="flexCheckDefault"
                       >Postagem Anônima
@@ -188,10 +210,9 @@ session_start();
                   </div>
                 </div>
                 <div class="modal-footer">
-                <a href="../posta.php" method="POST" > </a><button type="button" class="btn btn-concluir">
-                    Concluir
-                  </button>
+                    <button type="submit" class="btn btn-concluir" >Concluir</button>
                 </div>
+                  </form>
               </div>
             </div>
           </div>
