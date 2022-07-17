@@ -2,11 +2,15 @@
 include_once 'Models/PostModel.php';
 session_start();
 
+    $postModel = new PostModel();
 
-        if(isset($_GET['titulo']) && isset($_GET['tags'])) {
-            $txtBox = $_GET['conteudo'];
-            $titulo = $_GET['titulo'];
-            $tags = $_GET['tags'];
+    $data = $postModel->getPostByIdAluno($_SESSION['idUser']);
+    //echo var_dump($data);
+
+        if(isset($_POST['titulo']) && isset($_POST['tags'])) {
+            $txtBox = $_POST['conteudo'];
+            $titulo = $_POST['titulo'];
+            $tags = $_POST['tags'];
 
             $DataAtual = new DateTime();
             $result = $DataAtual->format('d-m-Y H:i:s');
@@ -19,9 +23,7 @@ session_start();
             $model->tag = $tags;
 
             $model->save($model);
-
         }
-
 ?>
 
 <!DOCTYPE html>
@@ -55,6 +57,8 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/forum.css" />
     <link rel="stylesheet" href="css/modalComments.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
   </head>
 
   <body>
@@ -139,7 +143,36 @@ session_start();
         </div>
         <!--Fim div lateral -->
         <div class="central col-9">
-          <div class="forum" id="postagens"></div>
+          <div class="forum" id="postagens">
+              <h2>Lista de Posts</h2>
+              <table>
+                  <thead class="card-panel">
+                  <tr>
+                      <th scope="col">Titulo</th>
+                      <th scope="col">Conteudo</th>
+                      <th scope="col">Tags</th>
+                      <th scope="col">IdAluno</th>
+                      <th scope="col">Data</th>
+                      <th scope="col">Deletar</th>
+                      <th scope="col">Editar</th>
+                  </tr>
+                  </thead>
+                  <tbody class="card-panel">
+                  <?php  foreach($data as $key => $value): ?>
+                  <tr>
+                  <div class="row">
+                          <td><?=$value->tforum;?></td>
+                          <td><?=$value->post;?></td>
+                          <td><?=$value->tag;?></td>
+                          <td><?=$value->idaluno;?></td>
+                          <td><?=$value->data;?></td>
+                          <td><span><button class="waves-effect waves-light red btn">Deletar</button></span></td>
+                          <td><span><button class="waves-effect waves-light blue btn">Editar</button></span></td>
+                  </tr>
+                  <?php endforeach;?>
+                  </tbody>
+              </table>
+          </div>
           <div class="position-relative">
             <!-- Button trigger modal -->
             <button
@@ -175,7 +208,7 @@ session_start();
                   <label class="postTitle"
                     >Insira o título da sua postagem:</label
                   >
-                    <form method="GET">
+                    <form method="POST">
                   <input
                     class="form-control"
                     type="text"

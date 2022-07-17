@@ -50,4 +50,13 @@ class PostDao
         $stmt->execute();
     }
 
+    public function delete($idpost)
+    {
+        $sql = "DELETE FROM postagem WHERE idpost = ? ";
+
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(1, $idpost);
+        $stmt->execute();
+    }
+
 }
